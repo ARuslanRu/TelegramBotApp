@@ -49,6 +49,8 @@ namespace TelegramBotApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            SeedData.EnshurePopulated(app);
         }
     }
 }
