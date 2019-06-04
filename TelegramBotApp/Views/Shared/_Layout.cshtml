@@ -4,14 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />    
 </head>
-<body>
+<body style="background-color:darkgrey">
+    
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Navbar content -->
             <a class="navbar-brand" href="#">Telegram Bot Application</a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,5 +34,11 @@
             @RenderBody()
         </div>
     </div>
+
+    <script src="~/lib/jquery/dist/jquery.slim.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/popper.js/dist/umd/popper.min.js"></script>
+    
+
 </body>
 </html>
